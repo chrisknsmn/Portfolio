@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chris Kinsman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="_assets-custom/images/logo.svg">
+	<link rel="stylesheet" href="_assets-custom/css/styles.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<header>
+		<div class="section-inner pad">
+			<div class="header-links">
+
+				<div class="desktop-only header-links-inner">
+					<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('about', 10 )">About</a>
+					<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('work', 10 )">Work</a>
+					<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('contact', 10 )">Contact</a>
+					<a href="_assets-custom/includes/kinsman_resume.pdf" target="_blank" class="header-link">Resume</a>
+				</div>
+
+				<div class="mobile-only header-links-inner mob-pad-t-0">
+					
+					<label for="touch"><span id="drop-btn" class="drop-btn">></span></label>
+					<input type="checkbox" id="touch" onclick="dropdown()">
+
+
+					<ul id="slide" class="slide">
+						<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('about', 200 )">About</a>
+						<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('work', 200 )">Work</a>
+						<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('contact', 200 )">Contact</a>
+						<a href="javascript:void(0)" class="header-link" onclick="scrollToTarget('contact', 200 )">Resume</a>
+					</ul>
+
+				</div>
+
+				<a href="#" class="header-img" onclick="check()"><img src="_assets-custom/images/logo.svg" alt="logo" /></a>
+
+			</div>
+
+		</div>
+	</header>
+
+	<main>
+		<section class="banner hidden">
+			<div class="section-inner">
+				<h1>Christopher Kinsman</h1>
+				<p class="banner-text">
+					Developing <a href="javascript:void(0)" class="bold" onclick="scrollToTarget('rbc', 5 )">dynamic</a> and <a href="javascript:void(0)" class="bold" onclick="scrollToTarget('fidelity', 5 )">accessible</a> experiences for the web.
+				</p>
+				<div class="flex">
+					<a href="javascript:void(0)" class="btn" onclick="scrollToTarget('contact', 10 )">
+						Connect
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="hidden" id="about">
+			<div class="section-inner">
+
+				<p class="h2">
+					About
+				</p>
+
+				<div class="grid-wpr">
+					<div class="grid-half">
+						<p class="body-text pad-r">
+							I am a web developer based in Toronto Canada, specializing in front end web development. Currently building web applications at <a href="https://www.interadcorp.com/" target="_blank" class="bold">Interad</a>.
+						</p>
+						<a href="javascript:void(0)" class="external-link mar-t-dbl" onclick="scrollToTarget('work', 5 )">> Work</a>
+						<a href="https://github.com/chrisknsmn" class="external-link">> Github</a>
+						<!-- <a href="#" class="external-link">> Twitter</a> -->
+					</div>
+					<div class="grid-half">
+						<div class="profile-card">
+							<div class="profile-img"></div>
+						</div>
+					</div>
+				</div>
+
+				<p class="h3 mar-t-dbl">
+					Featured Skills
+				</p>
+
+				<div class="desktop-lg-only">
+					<div class="grid-wpr">
+						<div class="grid-one-fourth">
+							<div class="skill-card pad-r mob-pad-t-0">
+								<div class="card-inner">
+									<p class="mar-t-0">Languages</p>
+									<div class="divider"></div>
+									<ul class="list-arrow">
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>Javascript</li>
+										<li>Typescript</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-one-fourth">
+							<div class="skill-card pad-r">
+								<div class="card-inner">
+									<p class="mar-t-0">Frameworks</p>
+									<div class="divider"></div>
+									<ul class="list-arrow">
+										<li>Node.js</li>
+										<li>React</li>
+										<li>Vue</li>
+										<li>jQuery</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-one-fourth">
+							<div class="skill-card pad-r">
+								<div class="card-inner">
+									<p class="mar-t-0">Tools</p>
+									<div class="divider"></div>
+									<ul class="list-arrow">
+										<li>Git</li>
+										<li>Docker</li>
+										<li>Wordpress</li>
+										<li class="empty-list"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid-one-fourth">
+							<div class="skill-card">
+								<div class="card-inner">
+									<p class="mar-t-0">Design</p>
+									<div class="divider"></div>
+									<ul class="list-arrow">
+										<li>Adobe</li>
+										<li>Figma</li>
+										<li>Sketch</li>
+										<li class="empty-list"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-lg-only skill-card-group-mob">
+
+					<div class="skill-card-container-mob">
+						<div class="skill-card-mob">
+							<p class="mar-t"><b>Languages</b></p>
+							<!-- <div class="divider"></div> -->
+							<ul class="list-arrow">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Typescript</li>
+							</ul>
+						</div>
+						<div class="skill-card-mob">
+							<p class="mar-t"><b>Frameworks</b></p>
+							<!-- <div class="divider"></div> -->
+							<ul class="list-arrow">
+								<li>Node.js</li>
+								<li>React</li>
+								<li>Vue</li>
+								<li>jQuery</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="skill-card-container-mob">
+						<div class="skill-card-mob">
+							<p class="mar-t"><b>Tools</b></p>
+							<!-- <div class="divider"></div> -->
+							<ul class="list-arrow">
+								<li>Git</li>
+								<li>Docker</li>
+								<li>Wordpress</li>
+							</ul>
+						</div>
+						<div class="skill-card-mob">
+							<p class="mar-t"><b>Design</b></p>
+							<!-- <div class="divider"></div> -->
+							<ul class="list-arrow">
+								<li>Adobe</li>
+								<li>Figma</li>
+								<li>Sketch</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</section>
+
+		<section class="hidden" id="work">			
+			<div class="section-inner">
+				
+				<p class="h2 mar-b-0">Work</p>
+				<span id="rbc"></span>
+				<p class="h3 pad-tb-dbl">Featured Projects </p>
+				
+				<div class="work-card">
+					<div class="grid-wpr">
+						<div class="grid-half mobile-only">
+							<div class="pad pad-b-0">
+								<div class="work-img-1"></div>
+							</div>
+						</div>
+						<div class="grid-half">
+							<div class="pad pad-b-dbl">
+								<p class="work-card-title">
+									Fidelity - Careers
+								</p>
+								<div class="divider"></div>
+								<p class="body-text mar-tb">
+									A 12 page careers website for Fidelity investment group. This project features a custom video player and modular design implementation.
+								</p>
+								<span id="fidelity"></span>
+								<a href="https://careers.fidelity.ca/en/index/" class="external-link mar-t" target="_blank">> Link</a>
+							</div>
+						</div>
+						<div class="grid-half desktop-only">
+							<div class="work-img-1"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="work-card mar-t-80">
+					<div class="grid-wpr">
+						<div class="grid-half mobile-only">
+							<div class="pad pad-b-0">
+								<div class="work-img-2"></div>
+							</div>
+						</div>
+						<div class="grid-half">
+							<div class="pad pad-b-dbl">
+								<p class="work-card-title">
+									RBC - API
+								</p>
+								<div class="divider"></div>
+								<p class="body-text mar-tb">
+									A campaign page for RBC's Business API program. This page features a custom code snippet displaying consistently accross devices.
+								</p>
+								<a href="https://www.rbcroyalbank.com/business/api/index.html" class="external-link" target="_blank">> Link</a>
+							</div>
+						</div>
+						<div class="grid-half desktop-only">
+							<div class="work-img-2"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="hidden" id="contact">
+			<div class="section-inner">
+				<p class="h2 mar-b-0">
+					Contact
+				</p>
+				<p class="contact-text">
+					I am interested in freelance opportunities. View my <a class="bold" href="_assets-custom/includes/kinsman_resume.pdf" target="_blank">Resume</a> for more information about my work experience. If you have any questions don't hesitate to <a class="bold" href="mailto:chrisknsmn@gmail.com">contact me</a>.
+				</p>
+
+				<div class="icons">
+					<div class="icon-svg">
+						<svg class="" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_111_1305)">
+							<!-- <path class="svg-stroke" d="M30 59.7186C13.5864 59.7186 0.281494 46.4137 0.281494 30C0.281494 13.5864 13.5864 0.281494 30 0.281494C46.4137 0.281494 59.7186 13.5864 59.7186 30C59.7186 46.4137 46.4137 59.7186 30 59.7186Z" stroke="#2B2B2B" stroke-miterlimit="10"/> -->
+							<path class="svg-fill" d="M22.759 24.1023H17.3091V41.7185H22.759V24.1023Z" fill="#2B2B2B"/>
+							<path class="svg-fill" d="M20.0085 21.7995C21.7868 21.7995 23.2324 20.341 23.2324 18.55C23.2324 16.759 21.7868 15.3005 20.0085 15.3005C18.2303 15.3005 16.7847 16.759 16.7847 18.55C16.7847 20.341 18.2303 21.7995 20.0085 21.7995Z" fill="#2B2B2B"/>
+							<path class="svg-fill" d="M31.4841 32.4817C31.4841 29.9998 32.6227 28.5286 34.8103 28.5286C36.8189 28.5286 37.7784 29.9486 37.7784 32.4817V41.7312H43.2027V30.5755C43.2027 25.8548 40.5289 23.5776 36.7933 23.5776C33.0577 23.5776 31.4841 26.4945 31.4841 26.4945V24.115H26.2517V41.7312H31.4841V32.4817Z" fill="#2B2B2B"/>
+							</g>
+							<defs>
+							<clipPath id="clip0_111_1305">
+							<rect width="60" height="60" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>	
+						<a href="https://www.linkedin.com/in/chrisknsmn" target="_blank">chrisknsmn</a>
+					</div>
+
+					<div class="icon-svg mar-t-hlf">
+						<svg class="icon-svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_111_1312)">
+							<path class="svg-fill"  d="M48.3071 31.42C48.2688 31.5351 48.192 31.6502 48.1792 31.7654C47.9361 35.373 46.6952 38.6097 44.5076 41.4882C42.6014 44.0084 40.2091 45.9146 37.3178 47.1812C36.8444 47.3858 36.3455 47.5777 35.8594 47.7441C35.0534 48.0255 34.5161 47.6289 34.5161 46.7846C34.5161 45.1982 34.5161 43.6246 34.5161 42.0383C34.5161 41.2323 34.4649 40.4391 34.1067 39.6971C33.902 39.2878 33.6334 38.9168 33.3903 38.5202C34.0555 38.3922 34.772 38.3027 35.4628 38.1236C37.3434 37.6502 39.0193 36.8187 40.1579 35.1684C40.9766 33.9786 41.3604 32.6225 41.5268 31.1897C41.6547 30.1151 41.6931 29.0276 41.4884 27.953C41.2581 26.7632 40.7464 25.7014 39.9404 24.7931C39.7997 24.6268 39.7741 24.4861 39.8508 24.2814C40.3754 22.7718 40.1707 21.3006 39.6078 19.8549C39.5694 19.7654 39.4159 19.6886 39.3135 19.6758C38.6739 19.5863 38.0726 19.7654 37.5225 20.034C36.627 20.4562 35.7442 20.9296 34.8615 21.4029C34.6184 21.5308 34.4265 21.5692 34.1579 21.5052C31.369 20.8016 28.5801 20.8016 25.7911 21.5052C25.4969 21.582 25.2794 21.5436 25.0363 21.3773C23.9233 20.6353 22.708 20.0852 21.4159 19.7398C21.4159 19.7398 21.3903 19.7398 21.3775 19.7398C20.4948 19.5479 20.3413 19.6374 20.0982 20.4818C19.7144 21.7867 19.6504 23.0788 20.0982 24.3709C20.1366 24.4733 20.0982 24.6524 20.0214 24.7419C18.499 26.469 18.1408 28.5287 18.3455 30.7419C18.4607 32.0596 18.7805 33.3133 19.369 34.5031C20.2005 36.1534 21.5822 37.1641 23.2709 37.7526C24.2688 38.098 25.3434 38.2387 26.3796 38.4818C26.4308 38.4818 26.4948 38.4946 26.4948 38.5074C26.2261 38.9935 25.9575 39.4669 25.7016 39.9658C25.612 40.1321 25.5481 40.324 25.5481 40.5159C25.5353 40.8997 25.3306 41.0788 24.9852 41.1684C23.8338 41.4882 22.6824 41.6801 21.5694 41.002C20.9937 40.6438 20.5587 40.1449 20.2133 39.5564C19.6888 38.6609 18.9468 38.0084 17.9489 37.7014C17.5779 37.5863 17.1558 37.6246 16.7592 37.6502C16.5161 37.663 16.4393 37.8677 16.6056 38.0596C16.772 38.2643 16.9255 38.4946 17.143 38.6225C18.128 39.1854 18.6781 40.0937 19.1131 41.0788C19.369 41.6417 19.5992 42.2046 20.0854 42.6396C20.853 43.3304 21.7741 43.5863 22.772 43.6374C23.6291 43.6758 24.499 43.6374 25.4201 43.6374C25.4201 44.2003 25.4201 44.8528 25.4201 45.5052C25.4201 45.9274 25.4329 46.3368 25.4329 46.759C25.4329 47.6161 24.87 48.0255 24.0513 47.7568C21.3519 46.8357 18.9724 45.3901 16.9766 43.3432C15.0449 41.3603 13.5737 39.0831 12.6526 36.4477C12.1408 34.9509 11.8338 33.4157 11.7187 31.8549C11.7187 31.7142 11.6803 31.5735 11.6675 31.4328C11.6675 30.7163 11.6675 29.9999 11.6675 29.2963C11.7314 28.7718 11.7954 28.2345 11.8722 27.7099C12.4607 23.7441 14.1749 20.3027 17.0278 17.5138C21.5694 13.0745 27.0449 11.437 33.3007 12.4861C36.87 13.0873 39.9532 14.7249 42.563 17.2195C45.8892 20.4178 47.7698 24.307 48.1664 28.9125C48.1664 29.0404 48.256 29.1684 48.3071 29.2835V31.42Z"/>
+							<!-- <path class="svg-stroke" d="M30 59.7186C13.5864 59.7186 0.281494 46.4137 0.281494 30C0.281494 13.5864 13.5864 0.281494 30 0.281494C46.4137 0.281494 59.7186 13.5864 59.7186 30C59.7186 46.4137 46.4137 59.7186 30 59.7186Z" stroke-miterlimit="10"/> -->
+							</g>
+							<defs>
+							<clipPath id="clip0_111_1312">
+							<rect width="60" height="60" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>	
+						<a href="https://github.com/chrisknsmn" target="_blank">chrisknsmn</a>
+					</div>
+					
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="section-inner">
+			<p class="footer-text">
+				Chris Kinsman - 2022
+			</p>	
+			<a href="#" class="footer-img"><img src="_assets-custom/images/logo.svg" alt="logo" /></a>
+		</div>
+	</footer>
+
+	<script src="_assets-custom/js/main.min.js"></script>
+
+</body>
+</html>
