@@ -86,7 +86,7 @@ function dist() {
 function server() {
     browserSync({
         notify: false,
-        logPrefix: 'DVL',
+        logPrefix: 'CTK',
         server: {
             baseDir: './',
             middleware: ssi({
@@ -95,7 +95,6 @@ function server() {
               version: '1.4.0'
             })
         },
-        //startPath: 'dvl/index.html',
         port: 3000
     });
 
