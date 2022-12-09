@@ -138,6 +138,7 @@ body {
 .mar-t-80 {
     margin-top: 80px !important;
 }
+
 @media only screen and (max-width: 640px) {
     .mob-mar-t {
         margin-top: var(--gap);
@@ -149,6 +150,7 @@ body {
         padding-top: 0px !important;
     }
 }
+
 .flex {
     display: flex;
 }
@@ -160,11 +162,13 @@ footer {
         display: flex;
     }
 }
+
 .section-inner {
 	max-width: 1000px;
 	margin: 0 auto;
     padding: var(--gap-dbl);
 }
+
 .grid-wpr {
 	width: 100%;
     display: flex;
@@ -199,6 +203,7 @@ footer {
 		width: 100%;
 	}
 }
+
 .btn {
     padding: var(--gap);
     padding-left: var(--gap-dbl);
